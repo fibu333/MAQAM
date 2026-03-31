@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ഖിലാഫത്ത് | മഖാം ശരീഫുകളുടെ ചരിത്രം</title>
+    <!-- Tailwind + Font Awesome + Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0515;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, .serif-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        
+        /* Royal gradient & gold accents */
+        .gold-text {
+            background: linear-gradient(135deg, #e4bf7a, #c9a03d, #f3e0a8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .royal-bg {
+            background: radial-gradient(circle at 10% 20%, #130b23, #03010a);
+        }
+        
+        .glass-panel {
+            background: rgba(20, 12, 36, 0.65);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 2rem;
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+        
+        .glass-panel:hover {
+            border-color: rgba(212, 175, 55, 0.7);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,175,55,0.2);
+            transform: translateY(-5px);
+        }
+        
+        .gold-button {
+            background: linear-gradient(95deg, #b8860b, #e4b346);
+            box-shadow: 0 8px 20px rgba(184, 134, 11, 0.3);
+            transition: all 0.2s ease;
+        }
+        
+        .gold-button:active {
+            transform: scale(0.97);
+        }
+        
+        /* custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e172b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c9a03d;
+            border-radius: 20px;
+        }
+        
+        /* Separate page styling — full page detail view with royal elegance */
+        .detail-page {
+            min-height: 100vh;
+            background: radial-gradient(circle at 20% 30%, #0f0a1c, #02010a);
+        }
+        
+        .detail-card {
+            background: rgba(18, 12, 32, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.7);
+        }
+        
+        .back-button {
+            background: rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            transition: all 0.2s;
+        }
+        
+        .back-button:hover {
+            background: rgba(212, 175, 55, 0.35);
+            border-color: #e4b346;
+        }
+        
+        .history-rich-text {
+            line-height: 1.75;
+            font-size: 1.07rem;
+        }
+        
+        .gold-border-bottom {
+            border-bottom: 2px solid rgba(212, 175, 55, 0.5);
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+        
+        .bg-luxury-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1.2px, transparent 1.2px);
+            background-size: 28px 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MAIN GALLERY PAGE (INDEX) -->
+    <div id="galleryPage" class="royal-bg bg-luxury-pattern text-gray-200 min-h-screen">
+        <div class="max-w-7xl mx-auto px-5 py-12 md:py-20">
+            <!-- Royal Header -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-full px-5 py-2 border border-gold-500/30 mb-5">
+                    <i class="fas fa-crown text-yellow-600 text-sm"></i>
+                    <span class="text-xs uppercase tracking-[0.2em] font-semibold text-amber-300">Mappila Heritage</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold gold-text tracking-wide">മഖാം ശരീഫുകൾ</h1>
+                <div class="h-1 w-24 bg-gradient-to-r from-amber-700 to-yellow-500 mx-auto mt-5 rounded-full"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-6 text-lg">കേരളത്തിലെ പുണ്യ കേന്ദ്രങ്ങളുടെ ആത്മീയ ചരിത്രം · ഓരോ കാർഡിലും ക്ലിക്ക് ചെയ്ത് പ്രത്യേക പേജിൽ പൂർണ്ണ വിവരണം</p>
+            </div>
+
+            <!-- Maqam Grid (9 Holy Centers) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 1. Mampuram Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-amber-800/40 to-yellow-800/20 flex items-center justify-center mb-5 border border-amber-500/40">
+                        <i class="fas fa-mosque text-3xl text-amber-400"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide">മമ്പുറം മഖാം</h2>
+                    <p class="text-amber-400/80 text-sm mt-1">സയ്യിദ് അലവി മൗലദ്ദവീല</p>
+                    <p class="text-gray-400 text-sm mt-3">മലപ്പുറം · ബ്രിട്ടീഷ് വിരുദ്ധ പോരാട്ടത്തിന്റെ ആത്മീയ കേന്ദ്രം</p>
+                    <button onclick="navigateToDetail('mampuram')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full transition flex items-center justify-center gap-2 text-base"><i class="fas fa-landmark"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 2. Perinagati Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-emerald-800/40 to-green-800/20 flex items-center justify-center mb-5 border border-emerald-500/40">
+                        <i class="fas fa-tree text-3xl text-emerald-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">പെരിങ്ങാടി മഖാം</h2>
+                    <p class="text-emerald-400/80 text-sm mt-1">സയ്യിദ് അബൂബക്കർ ഹൈദറൂസി (റ)</p>
+                    <p class="text-gray-400 text-sm mt-3">കണ്ണൂർ · വിശ്വപ്രസിദ്ധമായ നേർച്ചയും അന്നദാനവും</p>
+                    <button onclick="navigateToDetail('perinagati')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-hand-sparkles"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 3. Kondotty Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-red-800/40 to-rose-800/20 flex items-center justify-center mb-5 border border-rose-500/40">
+                        <i class="fas fa-archway text-3xl text-rose-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">കൊണ്ടോട്ടി മഖാം</h2>
+                    <p class="text-rose-400/80 text-sm mt-1">മുഹമ്മദ് ഷാ തങ്ങൾ · പേർഷ്യൻ വാസ്തു</p>
+                    <p class="text-gray-400 text-sm mt-3">മലപ്പുറം · ടിപ്പു സുൽത്താന്റെ ആദരവും നേർച്ചയും</p>
+                    <button onclick="navigateToDetail('kondotty')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-building-columns"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 4. Aluva Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-indigo-800/40 to-violet-800/20 flex items-center justify-center mb-5 border border-indigo-500/40">
+                        <i class="fas fa-water text-3xl text-indigo-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">ആലുവാ മഖാം</h2>
+                    <p class="text-indigo-400/80 text-sm mt-1">ശൈഖ് അബൂബക്കർ മുസ്ലിയാർ</p>
+                    <p class="text-gray-400 text-sm mt-3">പെരിയാർ തീരം · ഖുതുബുസ്സമാൻ ഉസ്താദ്</p>
+                    <button onclick="navigateToDetail('aluva')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-book-quran"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 5. Muttichur Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-sky-800/40 to-cyan-800/20 flex items-center justify-center mb-5 border border-sky-500/40">
+                        <i class="fas fa-river text-3xl text-sky-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">മുട്ടിച്ചൂർ മഖാം</h2>
+                    <p class="text-sky-400/80 text-sm mt-1">സയ്യിദ് യൂസുഫ് അൽ ഹൈദ്രോസി (റ)</p>
+                    <p class="text-gray-400 text-sm mt-3">തൃശ്ശൂർ · പുഴയോരത്തെ ശാന്തി കേന്ദ്രം</p>
+                    <button onclick="navigateToDetail('muttichur')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-leaf"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 6. Palakkad Valiya Juma Masjid -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-800/40 to-fuchsia-800/20 flex items-center justify-center mb-5 border border-purple-500/40">
+                        <i class="fas fa-fort text-3xl text-purple-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">പാലക്കാട് വലിയ പള്ളി</h2>
+                    <p class="text-purple-400/80 text-sm mt-1">ശൈഖ് ഹസൻ വലിയുല്ലാഹി</p>
+                    <p class="text-gray-400 text-sm mt-3">പാലക്കാട് കോട്ടയുടെ ചാരത്ത് · നേർച്ച പൈതൃകം</p>
+                    <button onclick="navigateToDetail('palakkad')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-kaaba"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 7. Alathur Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-800/40 to-amber-800/20 flex items-center justify-center mb-5 border border-orange-500/40">
+                        <i class="fas fa-mountain text-3xl text-orange-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">ആലത്തൂർ മഖാം</h2>
+                    <p class="text-orange-400/80 text-sm mt-1">സയ്യിദ് അബ്ദുറഹ്മാൻ ബാഫഖി</p>
+                    <p class="text-gray-400 text-sm mt-3">പാലക്കാട് · യമനിൽ നിന്നുള്ള പ്രബോധകർ</p>
+                    <button onclick="navigateToDetail('alathur')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-hands-praying"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 8. Mishkal Mosque Kuttichira -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-amber-800/40 to-yellow-800/20 flex items-center justify-center mb-5 border border-amber-500/40">
+                        <i class="fas fa-wood text-3xl text-amber-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">മിശ്കാൽ പള്ളി മഖാമുകൾ</h2>
+                    <p class="text-amber-400/80 text-sm mt-1">നാഖുദ മിശ്കാൽ · രക്തസാക്ഷികൾ</p>
+                    <p class="text-gray-400 text-sm mt-3">കോഴിക്കോട് · 8 നൂറ്റാണ്ട് പഴക്കം</p>
+                    <button onclick="navigateToDetail('mishkal')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-fire"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+
+                <!-- 9. Pinangode Maqam -->
+                <div class="glass-panel p-6 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-green-800/40 to-lime-800/20 flex items-center justify-center mb-5 border border-green-500/40">
+                        <i class="fas fa-cloud-sun text-3xl text-green-300"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">പിണങ്ങോട് മഖാം</h2>
+                    <p class="text-green-400/80 text-sm mt-1">സയ്യിദ് അലി ഹാമിദ് കോയ തങ്ങൾ</p>
+                    <p class="text-gray-400 text-sm mt-3">വയനാട് · ആത്മീയ സാന്നിധ്യം</p>
+                    <button onclick="navigateToDetail('pinangode')" class="mt-5 gold-button text-black font-bold py-2.5 px-6 rounded-full w-full"><i class="fas fa-seedling"></i> പൂർണ്ണ ചരിത്രം</button>
+                </div>
+            </div>
+
+            <!-- Footer royal note + created by -->
+            <div class="mt-20 text-center border-t border-white/10 pt-10">
+                <p class="text-gray-500 text-sm tracking-wide"><i class="fas fa-crown text-xs mr-1"></i> കേരളത്തിന്റെ മതസൗഹാർദ്ദ പൈതൃകം · ഓരോ മഖാമും ചരിത്രത്തിന്റെ നെടുത്തുണ്ട്</p>
+                <p class="text-amber-600/70 text-xs md:text-sm mt-4 font-serif tracking-wider">✨ created by MUHAMMED FASEEH C.P ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DYNAMIC DETAIL PAGE (Separate page view) - hidden initially -->
+    <div id="detailPageContainer" class="detail-page hidden min-h-screen text-gray-200"></div>
+
+    <script>
+        // Rich historical content database for each maqam (full narrative)
+        const fullHistoryData = {
+            mampuran: {
+                name: "മമ്പുറം മഖാം · സയ്യിദ് അലവി മൗലദ്ദവീല (റ)",
+                content: `
+                    <div class="space-y-5">
+                        <p class="text-amber-300 text-lg font-semibold">ഹിജ്റ 1166 (ക്രി. 1752) യമൻ ഹളർമൗത്തിൽ ജനനം. 17-ാം വയസ്സിൽ കേരളത്തിലെത്തി കോഴിക്കോട് സാമൂതിരിയാൽ സ്വീകരിക്കപ്പെട്ടു. മമ്പുറത്ത് താമസമാക്കിയ അദ്ദേഹം ജാതി വ്യവസ്ഥയ്ക്കെതിരെ നിലകൊണ്ടു.</p>
+                        <p>ബ്രിട്ടീഷ് ഈസ്റ്റ് ഇന്ത്യാ കമ്പനിക്കെതിരെ ‘സൈഫുൽ ബത്താർ’ എഴുതി ജനങ്ങളെ അണിനിരത്തി. മുട്ടുചിറ സമരത്തിന് ആത്മീയ നേതൃത്വം നൽകി. ഹിജ്റ 1260 റമദാൻ 7-ന് വഫാത്തായി. ഇന്നും വ്യാഴാഴ്ച സ്വലാത്ത് മജ്ലിസും വാർഷിക നേർച്ചയും ലക്ഷങ്ങളെ ആകർഷിക്കുന്നു. മതസൗഹാർദ്ദത്തിന്റെ മാതൃക, ഹിന്ദു-മുസ്ലിം ഐക്യത്തിന്റെ തീർത്ഥാടന കേന്ദ്രം.</p>
+                        <div class="bg-white/5 p-5 rounded-2xl border-l-4 border-amber-500 mt-4"><i class="fas fa-quote-left mr-2 text-amber-400"></i> മമ്പുറം ഉറൂസ് മലബാറിലെ ഏറ്റവും വലിയ ആത്മീയ സമ്മേളനങ്ങളിലൊന്ന്. ജാതിമത ഭേദമന്യേ ആയിരങ്ങൾ പങ്കെടുക്കുന്നു.</div>
+                    </div>
+                `
+            },
+            perinagati: { name: "പെരിങ്ങാടി മഖാം · സയ്യിദ് അബൂബക്കർ ഹൈദറൂസി (റ)", content: `<div class="space-y-4"><p>കണ്ണൂർ ജില്ലയിൽ മാഹിക്കടുത്ത് സ്ഥിതി. യമനിലെ ഹളർമൗത്തിൽ നിന്നും പ്രബോധനത്തിനെത്തിയ മഹാൻ. അദ്ദേഹത്തിന്റെ കാരുണ്യ പ്രവർത്തനങ്ങളും അത്ഭുത സിദ്ധികളും ഇന്നും സ്മരിക്കപ്പെടുന്നു. പെരിങ്ങാടി നേർച്ച (ഉറൂസ്) വേളയിൽ ജാതിമതഭേദമന്യേ പതിനായിരങ്ങൾ പങ്കെടുക്കുന്നു. വിപുലമായ അന്നദാനം ഇവിടുത്തെ പ്രത്യേകതയാണ്. മനശ്ശാന്തിക്കും രോഗശമനത്തിനുമായി ആളുകൾ സിയാറത്തിനെത്തുന്നു.</p><p>ശാന്തമായ അന്തരീക്ഷം ആത്മീയ ചൈതന്യം നൽകുന്നു. മലബാറിലെ പ്രധാന തീർത്ഥാടന കേന്ദ്രമായി ഇത് നിലകൊള്ളുന്നു. കണ്ണൂരിന്റെ ആത്മീയ മുഖമുദ്ര.</p></div>` },
+            kondotty: { name: "കൊണ്ടോട്ടി മഖാം · മുഹമ്മദ് ഷാ തങ്ങൾ", content: `<div><p>മലപ്പുറം കൊണ്ടോട്ടിയിലെ പഴയങ്ങാടി ജുമാ മസ്ജിദിനോട് ചേർന്നുള്ള ഖുബ്ബ. പേർഷ്യൻ-മുഗൾ വാസ്തുശൈലിയിലുള്ള ഈ മഖാം ഹൈദരാബാദ് നിസാമിന്റെ സഹായത്തിൽ നിർമ്മിച്ചത്. മുഹമ്മദ് ഷാ തങ്ങൾ ചിശ്തിയ്യ സൂഫി സരണിയുടെ പ്രചാരകർ. ടിപ്പു സുൽത്താൻ ഇവിടെ ഇനാം ഭൂമി നൽകി ബഹുമാനിച്ചു. കൊണ്ടോട്ടി നേർച്ച മലബാറിലെ ഏറ്റവും വലിയ മതസൗഹാർദ്ദ ആഘോഷങ്ങളിലൊന്ന്. മോയിൻകുട്ടി വൈദ്യരുടെ വരികളിൽ പ്രഭാവം വർണ്ണിക്കപ്പെട്ടിട്ടുണ്ട്. വർണ്ണാഭമായ ചരിത്രവും വാസ്തു മഹത്വവും.</p></div>` },
+            aluva: { name: "ആലുവാ മഖാം · ശൈഖ് അബൂബക്കർ മുസ്ലിയാർ (നൗവർ അള്ളാഹു മർഖദഹു)", content: `<div><p>എറണാകുളം ജില്ലയിൽ പെരിയാറിന്റെ തീരത്ത് സ്ഥിതി. ‘ആലുവ ഉസ്താദ്’ എന്നറിയപ്പെടുന്ന ശൈഖ് അബൂബക്കർ മുസ്ലിയാർ 1939-ൽ വഫാത്തായ അദ്ദേഹം പാണ്ഡിത്യത്തിനും ആത്മീയതയ്ക്കും പേരുകേട്ടവരായിരുന്നു. ജാതിമതഭേദമന്യേ എല്ലാവർക്കും പ്രിയപ്പെട്ട ആത്മീയാചാര്യൻ. പെരിയാറിന്റെ തീരത്തെ ശാന്തതയിലൂടെ ആയിരങ്ങൾ ഇന്നും സിയാറത്തിനായി എത്തുന്നു. ഖുതുബുസ്സമാൻ എന്ന് വിശേഷിപ്പിക്കപ്പെടുന്നു.</p></div>` },
+            muttichur: { name: "മുട്ടിച്ചൂർ മഖാം · സയ്യിദ് യൂസുഫ് അൽ ഹൈദ്രോസി (റ)", content: `<div><p>തൃശ്ശൂർ ജില്ലയിൽ പുഴയ്ക്കൽ പുഴയുടെ തീരത്ത്. യമനിൽ നിന്നും എത്തിയ സൂഫി വര്യൻ. ഏകദേശം 400 വർഷങ്ങൾക്ക് മുൻപ് ഇവിടെ ആത്മീയ പ്രവർത്തനങ്ങൾ ആരംഭിച്ചു. മുട്ടിച്ചൂർ നേർച്ച വലിയ ആഘോഷമാണ്. പുഴയുടെ സാമീപ്യവും പ്രകൃതിഭംഗിയും ശാന്തിയും ഇവിടേക്ക് വിശ്വാസികളെ ആകർഷിക്കുന്നു. സൂഫി സംഗീതവും സമുദായ ഐക്യവും ഇവിടുത്തെ മുഖമുദ്ര.</p></div>` },
+            palakkad: { name: "പാലക്കാട് വലിയ ജുമാ മസ്ജിദ് · ശൈഖ് ഹസൻ വലിയുല്ലാഹി", content: `<div><p>പാലക്കാട് കോട്ടയ്ക്ക് സമീപം സ്ഥിതി ചെയ്യുന്ന പുരാതന പള്ളി. മൈസൂർ ടിപ്പു സുൽത്താന്റെ കാലത്തും പ്രാധാന്യമുണ്ടായിരുന്നു. ശൈഖ് ഹസൻ വലിയുല്ലാഹിയുടെ മഖാം ഇവിടെ സ്ഥിതിചെയ്യുന്നു. 'പാലക്കാട് നേർച്ച' മതസൗഹാർദ്ദത്തിന്റെ അനന്യ മാതൃക. കേരളീയ-ഇസ്ലാമിക വാസ്തുവിദ്യയുടെ സമ്മേളനം. ആയിരക്കണക്കിന് ഭക്തർ ഉറൂസിന് സമ്മേളിക്കുന്നു.</p></div>` },
+            alathur: { name: "ആലത്തൂർ മഖാം · സയ്യിദ് അബ്ദുറഹ്മാൻ ബാഫഖി തങ്ങൾ", content: `<div><p>പാലക്കാട് ആലത്തൂരിലെ പ്രസിദ്ധ കേന്ദ്രം. യെമനിൽ നിന്നെത്തിയ ബാഫഖി തങ്ങന്മാരുടെ പരമ്പര. ഇരുന്നൂറിലധികം വർഷങ്ങൾക്ക് മുൻപ് ജീവിച്ചിരുന്ന മഹാനാണ് ഹസ്രത്ത് സയ്യിദ് അബ്ദുറഹ്മാൻ. ആണ്ടുനേർച്ച പതിനായിരങ്ങളുടെ സമ്മേളനമാണ്. ജാതിമത ഭേദമന്യേ ജനങ്ങൾ ഇവിടം സന്ദർശിക്കുന്നു. പ്രാർത്ഥനകൾക്ക് പ്രത്യേക പ്രാധാന്യം.</p></div>` },
+            mishkal: { name: "മിശ്കാൽ പള്ളി · കോഴിക്കോട് കുറ്റിച്ചിറ · രക്തസാക്ഷി മഖാമുകൾ", content: `<div><p>എ.ഡി. 1341-ൽ നാഖുദ മിശ്കാൽ നിർമ്മിച്ച ചരിത്ര പള്ളി. 1510-ലെ പോർച്ചുഗീസ് ആക്രമണത്തിൽ തീവെച്ചപ്പോൾ പള്ളി സംരക്ഷിക്കാൻ ശ്രമിച്ച രക്തസാക്ഷികളുടെ മഖാമുകൾ ഇവിടെയുണ്ട്. നാല് നിലകളിലായി ഒരൊറ്റ ആണി പോലും ഉപയോഗിക്കാതെ തടിയിൽ നിർമ്മിച്ചതാണ് പ്രത്യേകത. സാമൂതിരി പുനരുദ്ധാരണം നടത്തി. കോഴിക്കോടിന്റെ തനതു വാസ്തു പൈതൃകം.</p></div>` },
+            pinangode: { name: "പിണങ്ങോട് മഖാം · സയ്യിദ് അലി ഹാമിദ് കോയ തങ്ങൾ", content: `<div><p>വയനാട് കല്പറ്റയ്ക്കടുത്ത് സ്ഥിതി ചെയ്യുന്ന പ്രസിദ്ധ മഖാം. യമനിൽ നിന്നും കേരളത്തിലെത്തിയ തങ്ങന്മാരുടെ പരമ്പരയിൽ പെട്ട വ്യക്തിയാണ് സയ്യിദ് അലി ഹാമിദ് കോയ തങ്ങൾ. വയനാടൻ കാടുകളിലൂടെ സഞ്ചരിച്ച് ഇസ്ലാമിക പ്രബോധനം നടത്തി. ജമാദുൽ ആഖിർ മാസത്തിലെ വാർഷിക നേർച്ചയും അന്നദാനവും പ്രസിദ്ധം. മനോഹര വാസ്തുവിദ്യയും ശാന്തിയും ഇവിടുത്തെ പ്രത്യേകത. വയനാടിന്റെ ആത്മീയ കേന്ദ്രം.</p></div>` }
+        };
+        
+        // Mapping for consistent keys
+        function getDetailData(key) {
+            const map = {
+                mampuran: fullHistoryData.mampuran,
+                perinagati: fullHistoryData.perinagati,
+                kondotty: fullHistoryData.kondotty,
+                aluva: fullHistoryData.aluva,
+                muttichur: fullHistoryData.muttichur,
+                palakkad: fullHistoryData.palakkad,
+                alathur: fullHistoryData.alathur,
+                mishkal: fullHistoryData.mishkal,
+                pinangode: fullHistoryData.pinangode
+            };
+            return map[key] || fullHistoryData.mampuran;
+        }
+        
+        // Navigate to separate page (replaces gallery with detail view)
+        function navigateToDetail(maqamId) {
+            const detailData = getDetailData(maqamId);
+            if (!detailData) return;
+            
+            const detailContainer = document.getElementById('detailPageContainer');
+            const gallery = document.getElementById('galleryPage');
+            
+            // Build beautiful separate page with royal aesthetics and back button
+            detailContainer.innerHTML = `
+                <div class="min-h-screen py-10 px-5 md:px-12 relative">
+                    <div class="max-w-5xl mx-auto">
+                        <!-- Back Button with elegant glass style -->
+                        <div class="mb-8 flex justify-start">
+                            <button onclick="goBackToGallery()" class="back-button flex items-center gap-3 text-amber-300 px-5 py-2.5 rounded-full transition-all duration-200 font-medium">
+                                <i class="fas fa-arrow-left text-xl"></i>
+                                <span class="tracking-wide">തിരികെ മഖാം പട്ടികയിലേക്ക്</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Main Content Card -->
+                        <div class="detail-card p-6 md:p-10 rounded-3xl">
+                            <div class="flex items-center gap-4 border-b border-amber-700/40 pb-5 mb-7">
+                                <i class="fas fa-scroll text-3xl gold-text"></i>
+                                <h1 class="text-3xl md:text-5xl font-bold gold-text tracking-wide">${detailData.name}</h1>
+                            </div>
+                            <div class="history-rich-text text-gray-200 leading-loose space-y-5">
+                                ${detailData.content}
+                            </div>
+                            <div class="mt-10 pt-5 border-t border-white/10 text-center">
+                                <div class="inline-block bg-white/5 rounded-full px-6 py-2">
+                                    <i class="fas fa-praying-hands text-amber-400 mr-2"></i>
+                                    <span class="text-sm text-gray-300">റൂഹ് ഫാതിഹ · ആത്മീയ പൈതൃക സംരക്ഷണം</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- footer with creator inside detail page -->
+                        <div class="mt-12 text-center">
+                            <p class="text-amber-600/60 text-xs md:text-sm tracking-wider">✨ created by MUHAMMED FASEEH C.P ✨</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            gallery.classList.add('hidden');
+            detailContainer.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Back to main gallery function
+        window.goBackToGallery = function() {
+            const gallery = document.getElementById('galleryPage');
+            const detailContainer = document.getElementById('detailPageContainer');
+            gallery.classList.remove('hidden');
+            detailContainer.classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        
+        // Expose globally
+        window.navigateToDetail = navigateToDetail;
+    </script>
+</body>
+</html>
